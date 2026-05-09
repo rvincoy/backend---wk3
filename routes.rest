@@ -5,7 +5,7 @@ GET http://localhost:8080/contacts/69f628f412e112ead84ef4cf
 GET http://localhost:8080/contacts/69f6293512e112ead84ef4d0
 
 ### Update contact
-PUT http://localhost:8080/contacts/69fea1a629913ee8fb625c3d HTTP/1.1 
+PUT http://localhost:8080/contacts/69fea5f4bd12880f9327e817 HTTP/1.1 
 content-type: application/json
 
 {
@@ -17,7 +17,7 @@ content-type: application/json
 }
 
 ### Delete contact
-DELETE http://localhost:8080/contacts/69fea1a629913ee8fb625c3d
+DELETE http://localhost:8080/contacts/69fea5f4bd12880f9327e810
 
 ### Create contact
 POST http://localhost:8080/contacts HTTP/1.1
@@ -32,7 +32,36 @@ content-type: application/json
 }
 ###
 Production
-GET https://week2-backend-uhh1.onrender.com/contacts
-GET https://week2-backend-uhh1.onrender.com/contacts/69f6287712e112ead84ef4ce
-GET https://week2-backend-uhh1.onrender.com/contacts/69f628f412e112ead84ef4cf
-GET https://week2-backend-uhh1.onrender.com/contacts/69f6293512e112ead84ef4d0
+GET https://backend-wk3.onrender.com/contacts
+GET https://backend-wk3.onrender.com/contacts/69fea03429913ee8fb625c3b
+GET https://backend-wk3.onrender.com/contacts/69f628f412e112ead84ef4cf
+GET https://backend-wk3.onrender.com/contacts/69f6293512e112ead84ef4d0
+
+
+### Update contact
+PUT https://backend-wk3.onrender.com/contacts/69fea527fa933d1f1da7b78b HTTP/1.1 
+content-type: application/json
+
+{
+  "firstName": "Johnny Boy",
+  "lastName": "Doe3",
+  "email": "jdoe@gmail.com4",
+  "favoriteColor": "Greeny",
+  "birthday": "2/1/1990"
+}
+
+### Delete contact
+DELETE https://backend-wk3.onrender.com/contacts/69fea527fa933d1f1da7b78b
+
+### Create contact
+POST https://backend-wk3.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Johnny",
+  "lastName": "Doe",
+  "email": "jdoe@gmail.com",
+  "favoriteColor": "Green",
+  "birthday": "1/1/1990"
+}
+###
